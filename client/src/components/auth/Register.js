@@ -16,6 +16,12 @@ class Register extends Component {
       errors: {}
     };
   }
+  componentDidMount() {
+    // If logged in and user navigates to Register page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
@@ -24,24 +30,19 @@ class Register extends Component {
       });
     }
   }
-
   onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
-
     const newUser = {
       name: this.state.name,
       email: this.state.email,
       password: this.state.password,
       password2: this.state.password2
     };
-
     this.props.registerUser(newUser, this.props.history);
   };
-
   render() {
     const { errors } = this.state;
     return (
@@ -126,7 +127,7 @@ class Register extends Component {
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable black accent-3"
+                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                 >
                   Sign up
                 </button>

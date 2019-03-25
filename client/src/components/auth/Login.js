@@ -15,6 +15,13 @@ class Login extends Component {
     };
   }
 
+  componentDidMount() {
+    // If logged in and user navigates to Login page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
       this.props.history.push("/dashboard"); // push user to dashboard when they login
@@ -25,22 +32,17 @@ class Login extends Component {
       });
     }
   }
-
   onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
-
     const userData = {
       email: this.state.email,
       password: this.state.password
     };
-
-    console.log(userData);
+    this.props.loginUser(userData); // since we handle the redirect within our component, we don't need to pass in this.props.history as a parameter
   };
-
   render() {
     const { errors } = this.state;
     return (
@@ -103,7 +105,7 @@ class Login extends Component {
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable black accent-3"
+                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                 >
                   Login
                 </button>

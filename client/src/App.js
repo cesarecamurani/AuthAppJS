@@ -7,7 +7,6 @@ import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
 import Register from "./components/authentication/Register";
 import Login from "./components/authentication/Login";
-
 class App extends Component {
   render() {
     return (

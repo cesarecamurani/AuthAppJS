@@ -1,6 +1,6 @@
 # MERN-Auth-App
 
-![Alt text](/static/images/kapture.gif?raw=true "Screenshot")
+![Alt text](/client/public/mern_auth_app.gif?raw=true "Screenshot")
 
 Authentication app made with:
 - MongoDB

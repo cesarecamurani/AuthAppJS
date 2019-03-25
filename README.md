@@ -9,4 +9,4 @@ Authentication app made with:
 - Node.js
 - Redux
 
-Test with Postman API development (https://www.getpostman.com/)
+Tested with Postman API development (https://www.getpostman.com/)

@@ -7,11 +7,11 @@ class Navbar extends Component {
       <div className="navbar-fixed">
         <nav className="z-depth-0">
           <div className="nav-wrapper white">
-            <a href="/" style={{ fontFamily: "Courier" }}
+            <Link to="/" style={{ fontFamily: "Courier" }}
               className="col s5 brand-logo center black-text">
               <i className="material-icons">code</i>
               MERN
-            </a>
+            </Link>
           </div>
         </nav>
       </div>

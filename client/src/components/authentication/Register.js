@@ -12,9 +12,11 @@ class Register extends Component {
       errors: {}
     };
   }
+
   onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
+
   onSubmit = e => {
     e.preventDefault();
 
@@ -24,6 +26,7 @@ class Register extends Component {
       password: this.state.password,
       password2: this.state.password2
     };
+
     console.log(newUser);
   };
 

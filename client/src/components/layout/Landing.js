@@ -12,8 +12,7 @@ class Landing extends Component {
             </h4>
             <br />
             <Link to="/register">
-            <a
-              style={{
+            <a style={{
                 width: "150px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px"
@@ -24,8 +23,7 @@ class Landing extends Component {
             </a>
             </Link>
             <Link to="/Login">
-            <a
-              style={{
+            <a style={{
                 marginLeft: "2rem",
                 width: "150px",
                 borderRadius: "3px",

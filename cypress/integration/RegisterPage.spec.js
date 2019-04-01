@@ -1,7 +1,7 @@
 // Tests for Register Page
 
 describe('Test Register Page', () => {
-  describe ('Visit the landing page', () => {
+  describe ('Visit the register page', () => {
     it ('register page loads correctly', () => {
       cy.visit('/register');
     });
@@ -33,7 +33,7 @@ describe('Test Register Page', () => {
     it ('register links to login page', () => {
       cy.visit('/register')
       cy.get('#name').type('Cesare')
-      cy.get('#email').type('ces@cesarone.com')
+      cy.get('#email').type('ces@cesario.com')
       cy.get('#password').type('qwerty')
       cy.get('#password2').type('qwerty')
       cy.get('.btn').click()

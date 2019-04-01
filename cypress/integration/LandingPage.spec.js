@@ -3,7 +3,7 @@
 describe('Test Landing Page', () => {
   describe ('Visit the landing page', () => {
     it ('landing page loads correctly', () => {
-      cy.visit('/api/users');
+      cy.visit('/');
     });
   });
   describe ('Elements on the page', () => {

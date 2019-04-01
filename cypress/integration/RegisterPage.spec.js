@@ -29,4 +29,15 @@ describe('Test Register Page', () => {
       cy.url('/')
     })
   })
+  describe ('Registering redirect you to login Page', () => {
+    it ('register links to login page', () => {
+      cy.visit('/register')
+      cy.get('#name').type('Cesare')
+      cy.get('#email').type('ces@cesarone.com')
+      cy.get('#password').type('qwerty')
+      cy.get('#password2').type('qwerty')
+      cy.get('.btn').click()
+      cy.url('/login')
+    });
+  });
 })

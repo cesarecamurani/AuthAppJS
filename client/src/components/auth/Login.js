@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
+// used for conditional classes in our JSX
 import classnames from "classnames";
 
 class Login extends Component {

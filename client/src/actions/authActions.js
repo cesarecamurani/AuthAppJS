@@ -1,6 +1,8 @@
 import axios from "axios";
+// promise based HTTP client for making requests to our backend
 import setAuthToken from "../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
+// used to decode our jwt so we can get user data from it
 import {
   GET_ERRORS,
   SET_CURRENT_USER,

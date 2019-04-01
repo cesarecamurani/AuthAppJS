@@ -1,3 +1,4 @@
+// Tests for Private Route
 
 describe('Private Route', () => {
   describe('trying to access the dashboard if not logged in should redirect you to the login page', () => {

@@ -1,3 +1,5 @@
+// Tests for Landing Page
+
 describe('Test Landing Page', () => {
   describe ('Visit the landing page', () => {
     it ('landing page loads correctly', () => {

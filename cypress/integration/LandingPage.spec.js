@@ -20,11 +20,13 @@ describe('Test Landing Page', () => {
       cy.contains('Register').click()
       cy.url('http://localhost:3000/register')
       cy.get('.btn-flat').click()
+      cy.url('http://localhost:3000/')
     })
     it('checks for login button to link to login page', () => {
       cy.contains('Log In').click()
       cy.url('http://localhost:3000/login')
       cy.get('.btn-flat').click()
+      cy.url('http://localhost:3000/')
     })
   })
 })

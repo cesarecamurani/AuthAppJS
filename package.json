@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "cypress": "cypress open",
+    "cypress:all": "cypress run",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",

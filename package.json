@@ -1,7 +1,7 @@
 {
   "name": "mern-auth-app",
   "version": "1.0.0",
-  "description": "A simple authorisation app made in Js (MERN Stack)",
+  "description": "A simple authorisation app made in JS (MERN Stack)",
   "main": "server.js",
   "scripts": {
     "test": "jest",

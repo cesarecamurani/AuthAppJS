@@ -7,11 +7,11 @@ describe('Test Landing Page', () => {
     });
   });
   describe ('Elements on the page', () => {
-    it ('checks for "MERN Auth App" to be present', () => {
-      cy.contains('MERN Auth App')
+    it ('checks for "AuthAppJS" to be present', () => {
+      cy.contains('AuthAppJS')
     });
     it ('checks for "Welcome to my first auth app made with the MERN" Stack to be present', () => {
-      cy.contains('MERN Auth App').click()
+      cy.contains('AuthAppJS').click()
       cy.contains('Welcome to my first auth app made with the MERN Stack')
     });
   });

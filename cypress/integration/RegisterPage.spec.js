@@ -8,7 +8,7 @@ describe('Test Register Page', () => {
   });
   describe ('Elements on the page', () => {
     it ('checks for elements to be present', () => {
-      cy.contains('MERN Auth App')
+      cy.contains('AuthAppJS')
       cy.contains('Register below')
       cy.contains('Back to home')
       cy.contains('Already have an account?')

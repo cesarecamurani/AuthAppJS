@@ -2,11 +2,11 @@
 
 describe ('Test Navbar', () => {
   describe ('checks navbar elements', () => {
-    it ('checks for "MERN Auth App" to be present', () => {
-      cy.contains('MERN Auth App')
+    it ('checks for "AuthAppJS" to be present', () => {
+      cy.contains('AuthAppJS')
     });
-    it ('checks for "MERN Auth App" to link to landing page', () => {
-      cy.contains('MERN Auth App').click()
+    it ('checks for "AuthAppJS" to link to landing page', () => {
+      cy.contains('AuthAppJS').click()
       cy.url('/')
     });
   });

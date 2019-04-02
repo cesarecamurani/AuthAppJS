@@ -7,7 +7,7 @@ describe ('Tests for Dashboard Page', () => {
       cy.get('#email').type('cesare@makers.com')
       cy.get('#password').type('qwerty')
       cy.get('.btn').click()
-      cy.contains('MERN Auth App')
+      cy.contains('AuthAppJS')
       cy.contains('Hey there, Luca')
       cy.contains('You are logged into a full-stack MERN app')
     });
